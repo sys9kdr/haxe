@@ -531,6 +531,13 @@ class Context {
 	}
 
 	/**
+		Creates and returns a new instance of `TMono` type.
+	**/
+	public static function makeMonomorph():Type {
+		return load("make_monomorph", 0)();
+	}
+
+	/**
 		Defines a new module as `modulePath` with several `TypeDefinition`
 		`types`. This is analogous to defining a .hx file.
 
